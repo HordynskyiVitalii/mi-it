@@ -1,0 +1,420 @@
+/* Reset styles to default values */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+code,
+em,
+img,
+svg,
+small,
+strong,
+sub,
+sup,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+/* Remove default list styles */
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set default font family and size */
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+/* Remove spacing before and after block elements */
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+
+/* Remove border and outline on focused elements */
+
+a:focus {
+  outline: 0;
+}
+
+/* Reset text-decoration to 'none' */
+
+a {
+  text-decoration: none;
+}
+
+/* Reset some styles for form elements */
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+/* Normalize font family and size for form elements */
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  font-family: inherit;
+}
+
+/* Normalize font family and size for form elements */
+
+body {
+    background: url(../images/safeco24_equateur_allover_feuille_canard_160_2.jpg);
+    /* background-size: cover; */
+    /* overflow: hidden; */
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 100vh;
+}
+
+body::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: -1;
+}
+
+.header {
+    position: relative;
+    max-width: 1560px;
+    height: auto;
+    margin: auto;
+    z-index: 1;
+}
+
+.language {
+    margin-left: 7.25rem;
+    margin-top: 2.31rem;
+    display: flex;
+    align-items: center;
+}
+
+.flag__blue {
+    width: 22px;
+    height: 11px;
+    background-color: #004996;
+    border-radius: 20px 20px 0 0;
+}
+
+.flag__yellow {
+    width: 22px;
+    height: 11px;
+    background-color: #CCAA00;
+    border-radius: 0 0 20px 20px;
+}
+
+.language__list {
+    margin-left: 0.56rem;
+}
+
+.header__contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 60px 0 60px;
+    padding: 45px 56px 20px 56px;
+}
+
+.contacts__numbers {
+    display: flex;
+    cursor: pointer;
+    gap: 25px;
+}
+
+.numbers {
+    color: #000;
+font-family: Inter;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.about {
+    color: #000;
+font-family: Inter;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.contacts__about {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    cursor: pointer;
+}
+
+.icon__shop {
+    margin-left: 20px;
+    width: 22px;
+    height: 22px;
+}
+
+.header__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    background: #687273;
+    height: 44px;
+}
+
+.navigation__left {
+    display: flex;
+    gap: 20px;
+}
+
+.navigation__right {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+.navigation__text {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.navigation__input {
+    display: flex;
+    height: 44px;
+}
+
+.header__input {
+    display: flex;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    max-width: 150px;
+}
+
+.header__lable {
+    background-color: #FFF;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.header__lable::before {
+    content: '';
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.image__input {
+    width: 28px;
+}
+
+.header__logo {
+    position: absolute;
+    width: 14rem;
+    height: 14rem;
+    margin-top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.menu__mob, .unlock__menu {
+    display: none;
+}
+
+@media screen and (max-width: 1220px) {
+    .header__logo {
+        position: absolute;
+        width: 10rem;
+        height: 10rem;
+        margin-top: 53px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .navigation__text {
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        cursor: pointer;
+    }
+    .numbers {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 0.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .about {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 0.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .header__navigation {
+        padding: 0 20px 0 20px;
+    }
+    .header__contacts {
+        margin: 0 0 0 60px;
+    }
+    .menu__mob, .unlock__menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .header__logo {
+        display: none;
+    }
+    .header__navigation {
+        padding: 0 5px;
+    }
+    .header__contacts, .navigation__text{
+        display: none;
+    }
+    .header__input {
+        max-width: 100vh;
+    }
+    .language {
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    .menu__mob {
+        display: block;
+        max-width: 220px;
+        height: 100vh;
+        background-color: #687273;
+    }
+    .menu__close__btn {
+        margin-left: 10px;
+        border: none;
+        padding: 0;
+        width: 19px;
+        height: 17px;
+        background-color: #687273;
+        cursor: pointer;
+    }
+    .menu__icon__btn {
+        width: 12px;
+        height: 12px;
+        fill: #FFF;
+    }
+    .mob__menu__wrap {
+        background-color: #687273;
+        padding: 20px 10px 50px 15px;
+    }
+    .mob__menu__list {
+    }
+    .mob__navigation__text {
+        color: #fefefe;
+        font-family: Montserrat;
+        font-size: 0.8rem;
+        font-weight: 400;
+        padding-bottom: 20px;
+        margin-left: 0;
+    }
+    .contact-mob {
+    }
+    .mob-contact-menu {
+    }
+    .mob-contact-item {
+    }
+    .mob-contact-link {
+        color: #fefefe;
+    }
+    .mob-soc-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    .mob-soc-iten {
+    }
+    .mob-soc-link {
+    }
+    .mob-soc {
+    }
+    .header__navigation {
+    }
+    .unlock__menu {
+        background-color: #687273;
+        display: block;
+        border: none;
+        cursor: pointer;
+    }
+    .main__social__icon {
+        fill: #FFF;
+    }
+    .menu__mob {
+        display: none;
+    }
+    
+}
