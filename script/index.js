@@ -16,4 +16,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-
+$(document).ready(function () {
+    $('.slider').slick({
+        arrows:true,
+        slidesToShow:1,
+        slidesToScroll:1,
+        speed:1000,
+        autoplay:true,
+        autoPlaySpeed:1500,
+        pauseOnFocus:true,
+        pauseOnHover:true,
+        pauseOnDotHover:true,
+    });
+});
