@@ -303,7 +303,24 @@ line-height: normal;
 .menu__mob, .unlock__menu {
     display: none;
 }
+.fake__window {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    display: none;
+}
 
+.fake__block {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(202, 70, 70);
+}
 @media screen and (max-width: 1220px) {
     .header__logo {
         position: absolute;
@@ -486,7 +503,7 @@ line-height: normal;
     max-width: 1560px;
     display: flex;
     margin: auto;
-    padding: 0 56px;
+    padding: 0 56px 50px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -538,14 +555,16 @@ line-height: normal;
     display: flex;
     margin: auto;
     padding: 0 56px;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 .section__three__blok {
     padding-top: 20px;
     width: calc(25% - 20px);
+    height: 395px;
     margin: auto;
-    background-color: rgba(255, 241, 241, 0.745);
+    background-color: rgba(255, 241, 241, 0.3);
 }
 .section__three__card {
     position: relative;
@@ -565,9 +584,26 @@ line-height: normal;
     background-color: rgba(15, 15, 15, 0.629);
     background-size: cover;
     border: none;
+    cursor: pointer;
     right: 0;
     z-index: 10;
+    transition: fill 0.3s ease; /* Додаємо перехід для плавного ефекту */
 }
+
+.btn__heart:focus,
+.btn__heart:hover {
+    outline: none;
+    background-color: rgba(15, 15, 15, 1); /* Змінюємо колір при фокусі або наведенні */
+}
+
+.btn__heart:focus svg {
+    fill: yellow;
+}
+
+.btn__heart:hover svg {
+    fill: yellow; /* Змінюємо колір при наведенні */
+}
+
 
 .three__blok__title {
     padding: 10px 10px;
@@ -600,6 +636,13 @@ line-height: normal;
 .slick-next {
     display: none !important;
 }
+.section__title {
+    width: 100vh;
+    height: 50px;
+    font-size: 200%;
+    text-align: center;
+    margin: 0 auto;
+}
 @media screen and (max-width: 1200px) {
     .section__three__blok {
         width: calc(33.33% - 20px);
@@ -613,5 +656,6 @@ line-height: normal;
 @media screen and (max-width: 600px) {
     .section__three__blok {
         width: calc(100% - 20px);
+        padding: 20px;
     }
 }

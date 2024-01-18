@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/home.styles.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="./css/page.styles.css">
+  <title>Тканини світу</title>
 </head>
 <body>
   <header class="header container">
-    <img class="header__logo" src="./images/logo.png" alt="">
+    <a href="./index.html">
+      <img class="header__logo" src="./images/logo.png" alt="">
+    </a>
     <div class="language">
       <div class="flag__language">
         <div class="flag__blue"></div>
@@ -18,8 +21,8 @@
     </div>
     <div class="header__contacts">
       <ul class="contacts__numbers">
-        <li class="numbers">тел:</li>
-        <li><a class="numbers" href="#">+38 (098) 324-8-324,</a></li>
+        <li class="numbers">На головну</li>
+        <li><a class="numbers" href="#">тел:</a></li>
         <li><a class="numbers" href="#">+38 (098) 324-8-324</a></li>
       </ul>
       <ul class="contacts__about">
@@ -87,6 +90,12 @@
       </div>
     </div>
   </header>
+  <section class="fake__window">
+    <div class="fake__block">
+      <h4>Мирка</h4>
+      <p>Придбала</p>
+    </div>
+  </section>
   <main class="main container">
     <section class="section__one">
       <div class="slider">
@@ -142,6 +151,7 @@
         </div>
       </div>
     </section>
+    <h1 class="section__title">НОВИНКИ</h1>
     <section class="section__three">
       <div class="section__three__blok">
         <div class="section__three__card">
@@ -155,7 +165,7 @@
               <img class="three__blok__image" src="./images/Prod2/photo2.jpg" alt="">
               <img class="three__blok__image" src="./images/Prod2/photo3.jpg" alt="">
               <img class="three__blok__image" src="./images/Prod2/photo4.jpg" alt="">
-              <img class="three__blok__image" src="./images/Prod2/photo5..jpg" alt="">
+              <img class="three__blok__image" src="./images/Prod2/photo5.jpg" alt="">
               <img class="three__blok__image" src="./images/Prod2/photo6.jpg" alt="">
             </div>
         </div>
@@ -163,7 +173,7 @@
             <h4 class="three__blok__title">Коттон Гороховий принт у квітах</h4>
             <div class="three__blok__item">
                 <span class="price" id="priceValue"></span>
-                <a class="btn__pay" onclick="addToCart()"> КУПИТИ</a>
+                <a class="btn__pay" href="page2.html" onclick="addToCart('Коттон Гороховий принт у квітах', './images/Prod2/photo1.jpg', 10.99)"> КУПИТИ</a>
             </div>
         </div>
         </div>
@@ -318,6 +328,7 @@
         </div>
     </section>
 </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="./script/slick.min.js"></script>
   <script src="./script/index.js"></script>
